@@ -52,25 +52,25 @@ public class King extends ChessPiece{
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		// nw
+		// north west
 		p.setValues(position.getRow() - 1, position.getColumn() - 1);
 		if (getBoard().positionExists(p) && canMove(p)){
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		// ne
+		// north east
 		p.setValues(position.getRow() - 1, position.getColumn() + 1);
 		if (getBoard().positionExists(p) && canMove(p)){
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		// sw
+		// south west
 		p.setValues(position.getRow() + 1, position.getColumn() - 1);
 		if (getBoard().positionExists(p) && canMove(p)){
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		// se
+		// south east
 		p.setValues(position.getRow() + 1, position.getColumn() + 1);
 		if (getBoard().positionExists(p) && canMove(p)){
 			mat[p.getRow()][p.getColumn()] = true;
